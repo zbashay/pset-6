@@ -1,31 +1,97 @@
-body {
-  margin: auto;
-  padding-top: 10px;
-  width: 1224px;
+* {
+    margin: 15;
+    padding: 5;
+    color: black;
+}
+body{
+  background: white;
+}
+h1{
+  color: white;
+}
+.theHeader {
+  background-color: CornFlowerBlue;
+  padding: 30px 42px;
+  color: white;
+  text-align: center;
+}
+.theHeader::after{
+  content: '';
+  display: table;
+  clear: both;
 }
 
-h1 {
+#theInput{
+   width: 70%;
+   padding: 10px;
+   float: left;
+   font-size: 15px;
+   margin: 0;
+   border: none;
+   border-radius: 0;
+
+}
+.createButton {
+  padding: 10px;
+  background-color: coral;
+  color: white;
+  font-size: 15px;
+  width: 40%;
+  color: white;
+  float: left;
   text-align: center;
-  font-family: Tahoma, Geneva, sans-serif;
-  font-size: 25px;
-  letter-spacing: 3px;
-  word-spacing: 6px;
-  color: #000000;
-  font-weight: 800;
-  text-decoration: none solid rgb(68, 68, 68);
-  font-style: normal;
-  font-variant: small-caps;
-  text-transform: none;
-  padding-top: 10px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: 0.5s;
+
 }
 
-p {
-  text-align: center;
-  border-radius: 25px;
+.createButton:hover {
+   background-color: black;
+
 }
 
-canvas {
-  text-align: center;
-  border-radius: 25px;
+ul{
+  margin: 0;
+  padding: 0;
+}
 
+ul li{
+    color: white;
+    position: relative;
+    background: coral;
+    list-style-type: none;
+    cursor: pointer;padding: 10px 6px 10px 30px;
+    transition: 0.3s;
+}
+
+ul li: nth-child(odd){
+  background-color: CornFlowerBlue;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: black;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 15px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 10px;
+}
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 15px 10px 15px;
+}
+
+.close:hover {
+  background: blue;
+}
+
+ul li:hover {
+  background-color: CornFlowerBlue;
 }
