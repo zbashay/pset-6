@@ -58,7 +58,7 @@ table {
     border: 2px solid;
 }
 .complete_button:hover {
-    background-color: coral;
+    background-color: MidnightBlue;
 }
 .remove_button {
     align: left;
