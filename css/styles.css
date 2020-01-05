@@ -1,5 +1,11 @@
+body {
+  background-color: MidnightBlue;
+}
+hr{
+  margin-top: 50px;
+}
 .title {
-  font-family:serif;
+  font-family: georgia;
   font-size: 48px;
   color: white;
   width: 300px;
@@ -9,38 +15,18 @@
 }
 .todo_header{
   text-align: center;
-  font-family: serif;
+  font-family: georgia;
   font-size: 30px;
   color: white;
-}
-.user_input {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.input {
-  text-align: center;
-  width: 400px;
-  height: 20px;
-  font-family: serif;
-  font-size: 25px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.button_add {
-  width: 100px;
-  border-radius:70px;
-  font-family: serif;
-  font-size: 20px;
 }
 table {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    width: 800px;
     margin-top: 22px;
     border-spacing: 10px;
-    background-color: coral;
+    background-color: black;
     font-family: sans-serif;
 }
 .to_do {
@@ -62,13 +48,13 @@ table {
     border: 2px solid;
 }
 .priority_button:hover {
-    background-color: coral;
+    background-color: yellow;
 }
 .complete_button {
     align: left;
     width: 40px;
     text-align: center;
-    background-color: white;
+    background-color: LimeGreen;
     border: 2px solid;
 }
 .complete_button:hover {
@@ -78,15 +64,29 @@ table {
     align: left;
     width: 40px;
     text-align: center;
-    background-color: white;
+    background-color: red;
     border: 2px solid;
 }
 .remove_button:hover {
     background-color: coral;
 }
-body {
-  background-color: cornFlowerBlue;
+.user_input {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-hr{
-  margin-top: 50px;
+.input {
+  text-align: center;
+  width: 400px;
+  height: 20px;
+  font-family: serif;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button_add {
+  width: 100px;
+  border-radius:70px;
+  font-family: serif;
+  font-size: 20px;
 }

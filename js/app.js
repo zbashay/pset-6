@@ -62,45 +62,6 @@ const create_item = function() {
     document.getElementById("input_item").value = "";
 };
 
-const remove_item = function() {
-  var removed = false;
-  for (let i = 0; i < remove_button.length; i++) {
-    remove_button[i].onclick = function() {
-        removed = true;
-        let remove_element = row[i];
-        remove_element.remove();
-        elements.splice(i, 1);
-    };
-    if (removed) {
-        break;
-    }
-  }
-}
-
-const finish_item = function() {
-  var finish = false;
-  for (let x = 0; x < complete_button.length; x++) {
-    complete_button[x].onclick = function() {
-       if (elements[x].complete == false) {
-         finish = true;
-         list_item[x].style.setProperty("text-decoration", "line-through");
-         list_item[x].style.backgroundColor = "coral";
-         complete_button[x].style.backgroundColor = "coral";
-         elements[x].complete = true;
-       }
-       else if (elements[x].complete == true) {
-         complete_button[x].style.backgroundColor = "white";
-         list_item[x].style.setProperty("text-decoration", "none");
-         list_item[x].style.backgroundColor = "white";
-         elements[x].complete = false;
-       }
-     };
-     if (finish) {
-       break;
-     }
-  }
-}
-
 const prioritize_item = function() {
   var prioritize = false;
   for (let z = 0; z < priority_button.length; z++) {
@@ -149,3 +110,42 @@ document.getElementById("input_item").addEventListener("keyup", function(event) 
     document.getElementById("add_button").click();
   }
 });
+
+const remove_item = function() {
+  var removed = false;
+  for (let i = 0; i < remove_button.length; i++) {
+    remove_button[i].onclick = function() {
+        removed = true;
+        let remove_element = row[i];
+        remove_element.remove();
+        elements.splice(i, 1);
+    };
+    if (removed) {
+        break;
+    }
+  }
+}
+
+const finish_item = function() {
+  var finish = false;
+  for (let x = 0; x < complete_button.length; x++) {
+    complete_button[x].onclick = function() {
+       if (elements[x].complete == false) {
+         finish = true;
+         list_item[x].style.setProperty("text-decoration", "line-through");
+         list_item[x].style.backgroundColor = "LimeGreen";
+         complete_button[x].style.backgroundColor = "LimeGreen";
+         elements[x].complete = true;
+       }
+       else if (elements[x].complete == true) {
+         complete_button[x].style.backgroundColor = "white";
+         list_item[x].style.setProperty("text-decoration", "none");
+         list_item[x].style.backgroundColor = "white";
+         elements[x].complete = false;
+       }
+     };
+     if (finish) {
+       break;
+     }
+  }
+}
