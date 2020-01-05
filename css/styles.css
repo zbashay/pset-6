@@ -1,97 +1,92 @@
-* {
-    margin: 15;
-    padding: 5;
-    color: black;
+.title {
+  font-family:serif;
+  font-size: 48px;
+  color: white;
+  width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-body{
-  background: white;
-}
-h1{
+.todo_header{
+  text-align: center;
+  font-family: serif;
+  font-size: 30px;
   color: white;
 }
-.theHeader {
-  background-color: CornFlowerBlue;
-  padding: 30px 42px;
-  color: white;
+.user_input {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
-.theHeader::after{
-  content: '';
-  display: table;
-  clear: both;
-}
-
-#theInput{
-   width: 70%;
-   padding: 10px;
-   float: left;
-   font-size: 15px;
-   margin: 0;
-   border: none;
-   border-radius: 0;
-
-}
-.createButton {
-  padding: 10px;
-  background-color: coral;
-  color: white;
-  font-size: 15px;
-  width: 40%;
-  color: white;
-  float: left;
+.input {
   text-align: center;
-  cursor: pointer;
-  border-radius: 0;
-  transition: 0.5s;
-
+  width: 400px;
+  height: 20px;
+  font-family: serif;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.createButton:hover {
-   background-color: black;
-
+.button_add {
+  width: 100px;
+  border-radius:70px;
+  font-family: serif;
+  font-size: 20px;
 }
-
-ul{
-  margin: 0;
-  padding: 0;
+table {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    margin-top: 22px;
+    border-spacing: 10px;
+    background-color: coral;
+    font-family: sans-serif;
 }
-
-ul li{
-    color: white;
-    position: relative;
-    background: coral;
-    list-style-type: none;
-    cursor: pointer;padding: 10px 6px 10px 30px;
-    transition: 0.3s;
+.to_do {
+  font-family: sans-serif;
+  text-align: center;
+  border: 2px solid;
+  background-color: white;
+  font-size: 25px;
 }
-
-ul li: nth-child(odd){
-  background-color: CornFlowerBlue;
 }
-
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: black;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 15px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 10px;
+.row {
+    margin-top: 20px;
+    height: 40px;
 }
-.close{
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 10px 15px 10px 15px;
+.priority_button {
+    width: 40px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid;
 }
-
-.close:hover {
-  background: blue;
+.priority_button:hover {
+    background-color: coral;
 }
-
-ul li:hover {
-  background-color: CornFlowerBlue;
+.complete_button {
+    align: left;
+    width: 40px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid;
+}
+.complete_button:hover {
+    background-color: coral;
+}
+.remove_button {
+    align: left;
+    width: 40px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid;
+}
+.remove_button:hover {
+    background-color: coral;
+}
+body {
+  background-color: cornFlowerBlue;
+}
+hr{
+  margin-top: 50px;
 }
