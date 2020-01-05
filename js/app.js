@@ -22,9 +22,9 @@ const create_item = function() {
           task: input,
           priority: false,
           complete: false,
-          html_row: null,
           html_priority_button: null,
           html_text: null,
+          html_row: null,
           html_remove_button: null
       }
       elements.push(to_do);
