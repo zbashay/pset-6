@@ -125,7 +125,6 @@ const remove_item = function() {
     }
   }
 }
-
 const finish_item = function() {
   var finish = false;
   for (let x = 0; x < complete_button.length; x++) {
