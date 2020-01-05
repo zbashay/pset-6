@@ -15,7 +15,6 @@ window.onload = function() {
 const create_item = function() {
   let input = document.getElementById("input_item").value;
   if (input === "") {
-
   }
   else {
       let to_do = {
@@ -27,7 +26,6 @@ const create_item = function() {
           html_text: null,
           html_remove_button: null
       }
-
       elements.push(to_do);
       let index = elements.indexOf(to_do);
 
